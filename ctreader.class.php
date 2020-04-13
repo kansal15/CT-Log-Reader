@@ -35,15 +35,15 @@ class CTReader
 		return 0;
 	}
 	
-	public function downloadNextRange($i=0)
+	public function downloadNextRange($name,$i=0)
 	{
 		$from=$i;
 		$until=$i+$this->download_step-1;
-		$filename = sprintf("%010d_to_%010d.json", $from, $until).".gz";
+		$filename = sprintf("%010d_to_%010d.json", $from, $until).$name.".gz";
 		$url = $this->ct_url.'/ct/v1/get-entries?start='.urlencode($from).'&end='.urlencode($until);
 		if (!file_exists($filename))
 		{
-			file_put_contents("php://stderr", "$filename doesn't exist\n");
+		#	file_put_contents("php://stderr", "$filename doesn't exist\n");
 			$json = file_get_contents($url);
                 	$entry_count = count($json['entries']);
                 	file_put_contents("php://stderr", "REQ: ".$this->download_step.", got $entry_count\n");
@@ -57,19 +57,19 @@ class CTReader
 		}
 	}
 
-	public function downloadAll()
+	public function downloadAll($name)
 	{
 		$max = $this->getMax();
 		$round_down = ($max - $max%$this->download_step);
 		for($i=0, $ix=$round_down; $i<$ix; $i+=$this->download_step)
 		{
-			$this->downloadNextRange($i);
+			$this->downloadNextRange($name,$i);
 		}
 	}
 
 	public function parseFileList()
 	{
-		$files = glob("0*.json.gz");
+		$files = glob("*.gz");
 		foreach($files as $filename)
 		{
 			file_put_contents("php://stderr", "reading file: $filename\n");
