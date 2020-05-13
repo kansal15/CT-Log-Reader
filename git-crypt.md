@@ -8,8 +8,6 @@ description: git way to encrypt files within git repo
 
 git-crypt enables transparent encryption and decryption of files in a git repository. Files which you choose to protect are encrypted when committed, and decrypted when checked out. git-crypt lets you freely share a repository containing a mix of public and private content. git-crypt gracefully degrades, so developers without the secret key can still clone and commit to a repository with encrypted files. This lets you store your secret material \(such as keys or passwords\) in the same repository as your code, without requiring you to lock down your entire repository.
 
-git-crypt was written by [Andrew Ayer](https://www.agwa.name) \([agwa@andrewayer.name](mailto:agwa@andrewayer.name)\). For more information, see [https://www.agwa.name/projects/git-crypt](https://www.agwa.name/projects/git-crypt).
-
 ### 
 
 ### Building git-crypt
