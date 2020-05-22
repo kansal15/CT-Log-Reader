@@ -1,0 +1,87 @@
+{
+  "operators": {
+    "google": {
+      "Log": [
+        "https://ct.googleapis.com/logs/argon2020/",
+        "https://ct.googleapis.com/logs/argon2021/",
+        "https://ct.googleapis.com/logs/argon2021/",
+        "https://ct.googleapis.com/logs/argon2023/",
+        "https://ct.googleapis.com/logs/xenon2020/",
+        "https://ct.googleapis.com/logs/xenon2021/",
+        "https://ct.googleapis.com/logs/xenon2022/",
+        "https://ct.googleapis.com/logs/xenon2023/",
+        "https://ct.googleapis.com/aviator/",
+        "https://ct.googleapis.com/icarus/",
+        "https://ct.googleapis.com/pilot/",
+        "https://ct.googleapis.com/rocketeer/",
+        "https://ct.googleapis.com/skydiver/"
+      ]
+    },
+    "cloudflare": {
+      "Log": [
+        "https://ct.cloudflare.com/logs/nimbus2020/",
+        "https://ct.cloudflare.com/logs/nimbus2021/",
+        "https://ct.cloudflare.com/logs/nimbus2022/",
+        "https://ct.cloudflare.com/logs/nimbus2023/",
+        ""
+      ]
+    },
+    "DigiCert": {
+      "Log": [
+        "https://ct1.digicert-ct.com/log/",
+        "https://ct2.digicert-ct.com/log/",
+        "https://yeti2020.ct.digicert.com/log/",
+        "https://yeti2021.ct.digicert.com/log/",
+        "https://yeti2022.ct.digicert.com/log/",
+        "https://yeti2023.ct.digicert.com/log/",
+        "https://nessie2020.ct.digicert.com/log/",
+        "https://nessie2021.ct.digicert.com/log/",
+        "https://ct.ws.symantec.com/",
+        "https://sirius.ws.symantec.com/"
+      ]
+    },
+    "Certly": {
+      "Log": [
+        "https://log.certly.io/"
+      ]
+    },
+    "Izenpe": {
+      "Log": [
+        "https://ct.izenpe.com/"
+      ]
+    },
+    "WoSign": {
+      "Log": [
+        "https://ctlog.wosign.com/"
+      ]
+    },
+    "Venafi": {
+      "Log": [
+        "https://ctlog.api.venafi.com/",
+        "https://ctlog-gen2.api.venafi.com/"
+      ]
+    },
+    "CNNIC": {
+      "Log": [
+        "https://ctserver.cnnic.cn/"
+      ]
+    },
+    "StartCom": {
+      "Log": [
+        "https://ct.startssl.com/"
+      ]
+    },
+    "Sectigo": {
+      "Log": [
+        "https://sabre.ct.comodo.com/"
+      ]
+    },
+    "Let'sEncrypt": {
+      "Log": [
+        "https://oak.ct.letsencrypt.org/2020/",
+        "https://oak.ct.letsencrypt.org/2021/",
+        "https://oak.ct.letsencrypt.org/2022/"
+      ]
+    }
+  }
+}
